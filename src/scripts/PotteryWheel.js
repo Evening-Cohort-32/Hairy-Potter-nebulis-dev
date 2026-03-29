@@ -1,7 +1,7 @@
 
+let potteryId = 1
 
 export const makePottery = (shape, weight, height) => {
-    let potteryId = 1
 
     const pot = {
         shape: shape,

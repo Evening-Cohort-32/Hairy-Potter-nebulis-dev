@@ -1,6 +1,6 @@
 // Imports go first
 
-import { makePottery } from "./PotteryWheel"
+import { makePottery } from "./PotteryWheel.js"
 
 // Make 5 pieces of pottery at the wheel
 
@@ -17,7 +17,7 @@ const potteries = [
     },
     {
         shape: "Burj Khalifa",
-        weight: 10000,
+        weight: 1000000,
         height: 40000
     },
     {
@@ -32,14 +32,13 @@ const potteries = [
     }
 ]
 
+
+//initial test for loop
 for (const pottery of potteries) {
-    makePottery(shape, weight, height)
-    console.log(makePottery)
+    let i = makePottery(pottery["shape"], pottery["weight"], pottery["height"])
+    console.log(i)
 }
 
-/*
-
-*/
 
 // Fire each piece of pottery in the kiln
 
