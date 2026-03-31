@@ -2,6 +2,7 @@
 
 import { firePottery } from "./Kiln.js"
 import { makePottery } from "./potteryWheel.js"
+import { toSellOrNotToSell } from "./PotteryCatalog.js"
 
 // Make 5 pieces of pottery at the wheel
 
@@ -47,7 +48,18 @@ let dinnerPlate = makePottery("Dinner Plate", 1, 1)
 
 // Fire each piece of pottery in the kiln
 
-console.log(firePottery(mug, 2010))
+firePottery(mug, 2200)
+firePottery(platter, 1209)
+firePottery(burjKhalifa, 4802)
+firePottery(bowl, 9078)
+firePottery(dinnerPlate, 2022)
+
+toSellOrNotToSell(dinnerPlate, dinnerPlate.weight)
+toSellOrNotToSell(mug, mug.weight)
+toSellOrNotToSell(platter, platter.weight)
+toSellOrNotToSell(burjKhalifa, burjKhalifa.weight)
+toSellOrNotToSell(bowl, bowl.weight)
+
 
 /*
 for (const pottery of potteries) {
