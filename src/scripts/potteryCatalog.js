@@ -1,4 +1,4 @@
-let sellablePottery = []
+export let sellablePottery = []
 
 export const toSellOrNotToSell = (pottery, weight, cracked) => {
     
@@ -8,7 +8,7 @@ export const toSellOrNotToSell = (pottery, weight, cracked) => {
         pottery.price = 40
     }
 
-    if (cracked = false) {
+    if (cracked) {
         sellablePottery.push()
     }
 
