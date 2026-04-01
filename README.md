@@ -121,10 +121,10 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
    > I imported the HTML of the data from the JavaScript folder scripts/main.js with <script src="./scripts/main.js" type="module"></script>, further than that, I used if statements in both the Kiln.js and PotteryCatalog.js to determine if the objects I made were either cracked or weighed more or less than 6 grams, determining the price
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/89f072eeb4054818987fe5c744b0708d)
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > it is for the purpose to simplify reading and separate specific steps in the process of the code into digestable sections.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > there would have to be a separate array and if statement that declares if the pottery is cracked it must go into an array (for the sake of example, the array could have the name of defectedPottery) and have the price of 2.50 be added to the properties of the object.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/6bf44e2063444191833f2efc0403db66)
