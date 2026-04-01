@@ -8,8 +8,8 @@ export const toSellOrNotToSell = (pottery, weight, cracked) => {
         pottery.price = 40
     }
 
-    if (cracked) {
-        sellablePottery.push()
+    if (!cracked) {
+        sellablePottery.push(pottery)
     }
 
     return pottery

@@ -1,4 +1,4 @@
-import { sellablePottery } from "./potteryCatalog.js"
+import { sellablePottery } from "./PotteryCatalog.js"
 
 export const potteryList = () => {
     let potHTML = ''

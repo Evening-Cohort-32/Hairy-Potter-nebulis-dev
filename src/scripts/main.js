@@ -1,10 +1,10 @@
 // Imports go first
 
-import { firePottery } from "./kiln.js"
-import { makePottery } from "./potteryWheel.js"
-import { toSellOrNotToSell } from "./potteryCatalog.js"
+import { firePottery } from "./Kiln.js"
+import { makePottery } from "./PotteryWheel.js"
+import { toSellOrNotToSell } from "./PotteryCatalog.js"
 import { potteryList } from "./potteryList.js"
-import { sellablePottery } from "./potteryCatalog.js"
+import { sellablePottery } from "./PotteryCatalog.js"
 
 
 // Make 5 pieces of pottery at the wheel
@@ -29,12 +29,12 @@ firePottery(dinnerPlate, 2022)
 
 // Determine which ones should be sold, and their price
 
-toSellOrNotToSell(dinnerPlate, dinnerPlate.weight)
-toSellOrNotToSell(mug, mug.weight)
-toSellOrNotToSell(platter, platter.weight)
-toSellOrNotToSell(burjKhalifa, burjKhalifa.weight)
-toSellOrNotToSell(bowl, bowl.weight)
+toSellOrNotToSell(dinnerPlate, dinnerPlate.weight, dinnerPlate.cracked)
+toSellOrNotToSell(mug, mug.weight, mug.cracked)
+toSellOrNotToSell(platter, platter.weight, platter.cracked)
+toSellOrNotToSell(burjKhalifa, burjKhalifa.weight, burjKhalifa.cracked)
+toSellOrNotToSell(bowl, bowl.weight, bowl.cracked)
 
 // Invoke the component function that renders the HTML list
-
-potteryList()
+const container = document.querySelector('.potteryList')
+container.innerHTML = potteryList()

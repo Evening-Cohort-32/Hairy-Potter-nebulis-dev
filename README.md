@@ -119,7 +119,7 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > I imported the HTML of the data from the JavaScript folder scripts/main.js with <script src="./scripts/main.js" type="module"></script>, further than that, I used if statements in both the Kiln.js and PotteryCatalog.js to determine if the objects I made were either cracked or weighed more or less than 6 grams, determining the price
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
    > Paste your video's public URL here
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
